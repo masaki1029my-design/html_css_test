@@ -17,7 +17,7 @@
   padding-left: 20px;
   padding-top: 5px;
   line-height: 50px;
-  background-image: url("hora-3.jpg");
+  background-image: url("../photo/hora-3.jpg");
   box-shadow: 8px 0 24px rgba(0,0,0,.12);
   transform: translateX(-100%);  /* 左方向に隠す */
   transition: transform .28s ease;
