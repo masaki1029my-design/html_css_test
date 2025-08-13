@@ -1,11 +1,11 @@
-.mainmenu {
+/*.mainmenu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 14px;  /* 左端の反応幅　*/
+  width: 14px;  
   height: 100vh;
   z-index: 1000;
-}
+} */
 
 /* サイドバー本体（初期状態は左端の外に隠す） */
 .menu {
@@ -14,7 +14,6 @@
   left: 0;
   width: 280px;
   height: 100vh;
-  padding-left: 20px;
   padding-top: 5px;
   line-height: 50px;
   background-image: url("../photo/hora-3.jpg");
@@ -25,33 +24,53 @@
   overflow-y: auto;
   font-family: serif;
   font-size: 17px;
+  text-align: center;
 }
 
-/* ホットゾーンにカーソルがあるときに表示 */
-.mainmenu:hover + .menu {
+/* チェックボックスは非表示 */
+#menu-toggle {
+  display: none;
+}
+
+/* チェックが入ったらサイドバー表示 */
+#menu-toggle:checked ~ .menu {
   transform: translateX(0);
 }
 
-/* サイドバーの上にカーソルがある間も表示 */
-.menu:hover {
-  transform: translateX(0);
+/* ハンバーガーボタン */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 32px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1100;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
-/* アクセシビリティ対応（内部フォーカス時も表示） */
-.menu:focus-within {
-  transform: translateX(0);
+/* 開いたときの×アニメーション */
+#menu-toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#menu-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* 強制的に開くクラス（JS等で制御用） */
-.menu--open {
-  transform: translateX(0) !important;
-}
-
-/* 動きが苦手な人用 */
-@media (prefers-reduced-motion: reduce) {
-  .menu {
-    transition: none;
-  }
+/* コンテンツ部分 */
+.content {
+  margin-left: 20px;
+  padding: 20px;
 }
 
 a:link {
@@ -81,7 +100,7 @@ h3{
     font-family: serif;
 }
 
-h2{
+.title{
     color:white;
-    font-size: 18px;
+    font-size: 30px;
 }
