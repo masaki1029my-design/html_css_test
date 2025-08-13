@@ -52,7 +52,7 @@
   display: block;
   height: 3px;
   margin: 5px 0;
-  background: #333;
+  background: white;
   border-radius: 2px;
   transition: 0.3s;
 }
