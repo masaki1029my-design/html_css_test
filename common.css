@@ -1,0 +1,87 @@
+.mainmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14px;  /* 左端の反応幅　*/
+  height: 100vh;
+  z-index: 1000;
+}
+
+/* サイドバー本体（初期状態は左端の外に隠す） */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  padding-left: 20px;
+  padding-top: 5px;
+  line-height: 50px;
+  background-image: url("../photo/hora-3.jpg");
+  box-shadow: 8px 0 24px rgba(0,0,0,.12);
+  transform: translateX(-100%);  /* 左方向に隠す */
+  transition: transform .28s ease;
+  z-index: 1001;
+  overflow-y: auto;
+  font-family: serif;
+  font-size: 17px;
+}
+
+/* ホットゾーンにカーソルがあるときに表示 */
+.mainmenu:hover + .menu {
+  transform: translateX(0);
+}
+
+/* サイドバーの上にカーソルがある間も表示 */
+.menu:hover {
+  transform: translateX(0);
+}
+
+/* アクセシビリティ対応（内部フォーカス時も表示） */
+.menu:focus-within {
+  transform: translateX(0);
+}
+
+/* 強制的に開くクラス（JS等で制御用） */
+.menu--open {
+  transform: translateX(0) !important;
+}
+
+/* 動きが苦手な人用 */
+@media (prefers-reduced-motion: reduce) {
+  .menu {
+    transition: none;
+  }
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;    
+  text-decoration: none; /* 下線を消す */
+}
+.instagram{
+  font-size: 15px;
+  color:white;
+  text-decoration: underline;
+  padding-top: 300px;
+}
+
+h3{
+    color:white;
+    font-size: 40px;
+    font-family: serif;
+}
+
+h2{
+    color:white;
+    font-size: 18px;
+}

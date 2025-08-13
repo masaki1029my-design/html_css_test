@@ -1,0 +1,54 @@
+body {
+    background-color:black;
+    background-size:cover;
+    background-image:url("");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+
+.name{
+    font-size: 17px;
+    margin-left: 100px;
+}
+
+.home {
+    color: white;
+    text-align:center;
+    margin-left:0px;
+    margin-left:10px;
+    font-family: serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    background: linear-gradient(to bottom, #541c2a, black);
+    color: white;
+}
+
+h3{
+    color:white;
+    font-size: 40px;
+    font-family: serif;
+}
+
+h2{
+    color:white;
+    font-size: 18px;
+}
+
+.main{
+    line-height: 30px;
+    color: white;
+    padding-top: 10px;
+    height: 90px;
+    background-color: black;
+    background-position: center;
+}
+
+.mae{
+    font-weight: bold;
+    font-size: 20px;
+}
