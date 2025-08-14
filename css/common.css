@@ -27,6 +27,14 @@
   font-family: serif;
   font-size: 28px;
   text-align: center;
+  color: white;
+}
+
+.news{
+  padding-top: 5px;
+  margin-top: 1px;
+  color: brown;
+  text-decoration: underline;
 }
 
 .English{
