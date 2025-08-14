@@ -52,7 +52,60 @@ h2{
     background-position: center;
 }
 
+.main1{
+    padding-bottom: 25px;
+    font-size: 20px;
+    line-height: 37px;
+    color: white;
+    padding-top: 10px;
+    background-color: black;
+    background-position: center;
+}
+
+.main2{
+    display: grid;
+    grid-auto-flow: column;         /* 要素を横方向へ自動配置 */
+    grid-auto-columns: 90%;         /* 1枚分の見せ方（%を変えると見える枚数が変わる） */
+    gap: 12px;
+
+    overflow-x: auto;               /* 横スクロール有効化 */
+    overscroll-behavior-x: contain; /* iOSなどでの余計なバウンス抑制 */
+    -webkit-overflow-scrolling: touch;
+
+    scroll-snap-type: x mandatory;  /* スナップ（パチッと止まる） */
+    scroll-padding: 20%;           /* 先頭の余白分を考慮 */
+    padding: 12px;
+    border-radius: 16px;
+    background-image: url("../photo/hora-3.jpg");
+
+    scrollbar-width: none;
+}
+
+.main2::before,
+.main2::after {
+  content: "";
+  width: 50%; /* 中央スナップ分の余白 */
+}
+
+
+.main2 > img {
+  width: 595px;
+  height: 842px;                  /* 好みで調整。固定がイヤなら aspect-ratio を使う */
+  object-fit: cover;              /* 画像をトリミングして枠にフィット */
+  border-radius: 16px;
+  scroll-snap-align: center;       /* 画像を中央でスナップ */
+  user-select: none;              /* ドラッグ時の選択防止 */
+  pointer-events: none;           /* 画像上のドラッグをスムーズに（リンクにしたい時は外す） */
+}
+
+.main2::-webkit-scrollbar { display: none; }
+
 .mae{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.mae1{
     font-weight: bold;
     font-size: 35px;
 }
