@@ -19,10 +19,10 @@ body {
     font-family: serif;
 }
 
-h1{
+.theme{
     padding-right: 7px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 70px;
     text-align: center;
     background-color: black;
     background: linear-gradient(to bottom, #541c2a, black);
@@ -41,6 +41,7 @@ h2{
 }
 
 .main{
+    font-size: 20px;
     line-height: 30px;
     color: white;
     padding-top: 10px;
@@ -51,5 +52,5 @@ h2{
 
 .mae{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
 }
