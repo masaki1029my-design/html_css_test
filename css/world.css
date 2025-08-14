@@ -42,12 +42,12 @@ h2{
     font-size: 18px;
 }
 
-.main{
+.main0{
+    padding-bottom: 400px;
     font-size: 20px;
     line-height: 30px;
     color: white;
     padding-top: 10px;
-    height: 90px;
     background-color: black;
     background-position: center;
 }
