@@ -15,7 +15,8 @@
   width: 280px;
   height: 100vh;
   padding-top: 5px;
-  line-height: 50px;
+  margin-top: 1px;
+  margin-bottom: 100px;
   background-image: url("../photo/hora-3.jpg");
   background-repeat: no-repeat;
   box-shadow: 8px 0 24px rgba(0,0,0,.12);
@@ -24,8 +25,15 @@
   z-index: 1001;
   overflow-y: auto;
   font-family: serif;
-  font-size: 17px;
+  font-size: 28px;
   text-align: center;
+}
+
+.English{
+  margin-bottom: 2px;
+  margin-top: 50px;
+  font-size: 18px;
+  color: white;
 }
 
 /* チェックボックスは非表示 */
@@ -92,7 +100,7 @@ a:hover {
   font-size: 15px;
   color:white;
   text-decoration: underline;
-  padding-top: 300px;
+  padding-top: 100px;
 }
 
 h3{
@@ -103,5 +111,5 @@ h3{
 
 .title{
     color:white;
-    font-size: 30px;
+    font-size: 45px;
 }
