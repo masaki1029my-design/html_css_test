@@ -20,6 +20,7 @@ body {
 }
 
 .theme{
+    vertical-align: middle;
     padding-right: 7px;
     font-weight: bold;
     font-size: 70px;
@@ -54,4 +55,9 @@ h2{
 .mae{
     font-weight: bold;
     font-size: 35px;
+}
+
+.EN{
+    vertical-align: middle;
+    font-size: 30px;
 }
