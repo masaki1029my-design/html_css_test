@@ -25,7 +25,8 @@ body {
     font-size: 70px;
     text-align: center;
     background-color: black;
-    background: linear-gradient(to bottom, #541c2a, black);
+    /*background: linear-gradient(to bottom, #541c2a, black);*/
+    background: linear-gradient(to right, black, #541c2a, black);
     color: white;
 }
 
