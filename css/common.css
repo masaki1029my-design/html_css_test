@@ -7,6 +7,10 @@
   z-index: 1000;
 } */
 
+body{
+  margin: 0;
+}
+
 /* サイドバー本体（初期状態は左端の外に隠す） */
 .menu {
   position: fixed;
