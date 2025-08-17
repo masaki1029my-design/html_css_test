@@ -38,29 +38,45 @@ body{
 .news{
   padding-top: 5px;
   margin-top: 1px;
-  color: #541c2a;
-  text-decoration: underline;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #541c2a;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .world{
   padding-top: 5px;
   margin-top: 1px;
-  color: #541c2a;
-  text-decoration: underline;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #541c2a;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .creature{
   padding-top: 5px;
   margin-top: 1px;
-  color: #541c2a;
-  text-decoration: underline;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #541c2a;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .m{
   padding-top: 5px;
   margin-top: 1px;
-  color: #541c2a;
-  text-decoration: underline;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #541c2a;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .English{
@@ -135,7 +151,7 @@ a:link {
   transform-origin: center;             /* 中央基点で拡大 */
   width: 280px;
   height: 40px;
-  background: brown;
+  background-color: brown;
   z-index: -1; /* テキストの下に配置 */
   transition: transform 0.4s ease;
 }
