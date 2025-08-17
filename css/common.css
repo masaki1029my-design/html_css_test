@@ -38,28 +38,28 @@ body{
 .news{
   padding-top: 5px;
   margin-top: 1px;
-  color: brown;
+  color: #541c2a;
   text-decoration: underline;
 }
 
 .world{
   padding-top: 5px;
   margin-top: 1px;
-  color: brown;
+  color: #541c2a;
   text-decoration: underline;
 }
 
 .creature{
   padding-top: 5px;
   margin-top: 1px;
-  color: brown;
+  color: #541c2a;
   text-decoration: underline;
 }
 
 .m{
   padding-top: 5px;
   margin-top: 1px;
-  color: brown;
+  color: #541c2a;
   text-decoration: underline;
 }
 
@@ -121,13 +121,36 @@ a:link {
   text-decoration: none;
 }
 
+.ba{
+  position: relative;
+  padding-top: 5px;
+}
+
+.ba::before{
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
+  transform-origin: center;             /* 中央基点で拡大 */
+  width: 280px;
+  height: 40px;
+  background: brown;
+  z-index: -1; /* テキストの下に配置 */
+  transition: transform 0.4s ease;
+}
+
+.ba:hover::before{
+  transform: translateX(-50%) scaleX(1); /* 横に広がる */
+}
+
 a:visited {
   color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;    
+  color: white;    
   text-decoration: none; /* 下線を消す */
 }
 .instagram{
