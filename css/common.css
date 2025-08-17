@@ -17,9 +17,9 @@ body{
   top: 0;
   left: 0;
   width: 350px;
-  height: 100vh;
+  height: 900px;
   padding-top: 5px;
-  margin-top: 1px;
+  margin-top: 0;
   margin-bottom: 100px;
   background-image: url("../photo/hora-3.jpg");
   background-repeat: no-repeat;
