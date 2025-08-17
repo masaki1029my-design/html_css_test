@@ -52,7 +52,7 @@ h2{
     background: linear-gradient(to right, black, gray, black);
     background-position: center;
     height: 230px;           /* 画面いっぱい */
-    width: auto;         /* 文章の幅を決める */
+    width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
     padding-left: 50;
@@ -61,16 +61,26 @@ h2{
 }
 
 .main1{
-    padding-bottom: 25px;
+    padding-bottom: 60px;
     font-size: 20px;
     line-height: 37px;
     color: white;
     padding-top: 10px;
-    background-color: black;
+    background-color: gray;
+    background: linear-gradient(to right, black, gray, black);
     background-position: center;
+    height: 30px;           /* 画面いっぱい */
+    width: 900px;         /* 文章の幅を決める */
+    text-align: justify;  /* 両端揃え */
+    margin: 0 auto;
+    padding-left: 50;
+    padding-right: 50;
+    text-align: center;
 }
 
 .main2{
+    width: 900px;
+    height: 900px;
     display: grid;
     grid-auto-flow: column;         /* 要素を横方向へ自動配置 */
     grid-auto-columns: 90%;         /* 1枚分の見せ方（%を変えると見える枚数が変わる） */
@@ -82,11 +92,14 @@ h2{
 
     scroll-snap-type: x mandatory;  /* スナップ（パチッと止まる） */
     scroll-padding: 20%;           /* 先頭の余白分を考慮 */
-    padding: 12px;
+    padding: 50px;
     border-radius: 16px;
-    background-image: url("../photo/e4b95ddf58c129608deb6bd5f03d6702_t.jpg");
+    background-color: gray;
+    background: linear-gradient(to right, black, gray, black);
 
     scrollbar-width: none;
+
+    margin: 0 auto;
 }
 
 .main2::before,
