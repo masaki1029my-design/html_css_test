@@ -1,7 +1,6 @@
 body {
-    background-color:black;
+    background-color: black;
     background-size:cover;
-    background-image:url("");
     background-attachment:fixed;
     background-repeat:no-repeat;
     justify-content: center; /* 横中央 */
@@ -67,7 +66,6 @@ h2{
     line-height: 37px;
     color: white;
     padding-top: 10px;
-    background-color: black;
     background-position: center;
 }
 
