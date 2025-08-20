@@ -21,6 +21,12 @@ body {
 }
 
 .theme{
+    position: fixed;
+    inset: 0 auto auto 0; /* top:0; left:0; と同等 */
+    width: 100%;
+    margin-top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
     padding-right: 7px;
     font-weight: bold;
     font-size: 70px;
@@ -122,4 +128,8 @@ h2{
 .bann:hover {
   color: white;    
   text-decoration: none; /* 下線を消す */
+}
+
+.empty{
+    margin: 11.5em 0; 
 }
