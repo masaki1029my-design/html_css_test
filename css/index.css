@@ -96,13 +96,13 @@ h2{
     font-size: 30px;
 }
 
-.bann{
+.main1{
   color: brown;
   position: relative;
   padding-top: 5px;
 }
 
-.bann::before{
+.main1::before{
   content:"";
   position: absolute;
   left: 50%;
@@ -116,16 +116,16 @@ h2{
   transition: transform 0.4s ease;
 }
 
-.bann:hover::before{
+.main1:hover::before{
   transform: translateX(-50%) scaleX(1); /* 横に広がる */
 }
 
-.bann:visited {
+.main1:visited {
   color: white;
   text-decoration: none;
 }
 
-.bann:hover {
+.main1:hover {
   color: white;    
   text-decoration: none; /* 下線を消す */
 }
