@@ -68,6 +68,17 @@ body{
   margin: 0 auto;
 }
 
+.others{
+  padding-top: 5px;
+  margin-top: 1px;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #541c2a;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+}
+
 .m{
   padding-top: 5px;
   margin-top: 1px;
@@ -208,4 +219,27 @@ h3{
   font-size: 18px;
   color: #ff0;
   animation: English01 1.5s ease-in-out infinite;
+}
+
+@keyframes English02 {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #ff0,
+      0 0 10px #ff0,
+      0 0 20px #ff0;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px white,
+      0 0 20px #ff0,
+      0 0 40px #ff0;
+  }
+}
+
+.English02{
+  margin-bottom: 2px;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #ff0;
+  animation: English02 1.5s ease-in-out infinite;
 }
