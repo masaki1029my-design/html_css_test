@@ -13,7 +13,6 @@ body {
 }
 
 .home {
-    color: white;
     text-align:center;
     margin-left:0px;
     margin-left:10px;
@@ -35,17 +34,6 @@ body {
     /*background: linear-gradient(to bottom, #541c2a, black);*/
     background: linear-gradient(to right, black, #541c2a, black);
     color: white;
-}
-
-h3{
-    color:white;
-    font-size: 40px;
-    font-family: serif;
-}
-
-h2{
-    color:white;
-    font-size: 18px;
 }
 
 .main0{
@@ -71,9 +59,11 @@ h2{
     padding-bottom: 100px;
     font-size: 35px;
     line-height: 37px;
-    color: white;
     padding-top: 10px;
     background-position: center;
+    color: brown;
+    position: relative;
+    padding-top: 5px;
 }
 
 .main2{
@@ -96,38 +86,33 @@ h2{
     font-size: 30px;
 }
 
-.main1{
-  color: brown;
-  position: relative;
-  padding-top: 5px;
-}
-
 .main1::before{
-  content:"";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
-  transform-origin: center;             /* 中央基点で拡大 */
-  width: 280px;
-  height: 50px;
-  background-color: brown;
-  z-index: -1; /* テキストの下に配置 */
-  transition: transform 0.4s ease;
+    content:"";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
+    transform-origin: center;             /* 中央基点で拡大 */
+    width: 280px;
+    height: 50px;
+    background-color: brown;
+    z-index: -1; /* テキストの下に配置 */
+    transition: transform 0.4s ease;
 }
 
 .main1:hover::before{
-  transform: translateX(-50%) scaleX(1); /* 横に広がる */
+    color: brown;
+    transform: translateX(-50%) scaleX(1); /* 横に広がる */
 }
 
 .main1:visited {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .main1:hover {
-  color: white;    
-  text-decoration: none; /* 下線を消す */
+    color: white;    
+    text-decoration: none; /* 下線を消す */
 }
 
 .empty{
