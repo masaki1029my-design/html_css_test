@@ -22,6 +22,8 @@ body {
     inset: 0 auto auto 0;
 }
 
+:root { --safe-top: env(safe-area-inset-top); }
+
 .theme{
     position: fixed;
     inset: 0 auto auto 0; /* top:0; left:0; と同等 */
@@ -38,6 +40,8 @@ body {
     /*background: linear-gradient(to bottom, #541c2a, black);*/
     background: linear-gradient(to right, black, #541c2a, black);
     color: white;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 h3{
