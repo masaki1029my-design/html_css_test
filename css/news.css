@@ -20,6 +20,7 @@ body {
     margin-left:10px;
     font-family: serif;
     inset: 0 auto auto 0;
+
 }
 
 :root { --safe-top: env(safe-area-inset-top); }
@@ -42,7 +43,9 @@ body {
     color: white;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+    padding: calc(8px + var(--safe-top)) 12px 8px;
 }
+
 
 h3{
     color:white;
