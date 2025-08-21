@@ -20,7 +20,6 @@ body {
 }
 
 .theme{
-    position: fixed;
     inset: 0 auto auto 0; /* top:0; left:0; と同等 */
     width: 100%;
     margin-top: 0;
@@ -35,17 +34,6 @@ body {
     /*background: linear-gradient(to bottom, #541c2a, black);*/
     background: linear-gradient(to right, black, #541c2a, black);
     color: white;
-}
-
-h3{
-    color:white;
-    font-size: 40px;
-    font-family: serif;
-}
-
-h2{
-    color:white;
-    font-size: 18px;
 }
 
 .main0{
