@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
     background-size:cover;
     background-attachment:fixed;
     background-repeat:no-repeat;
@@ -18,10 +18,16 @@ body {
     margin-left:10px;
     font-family: serif;
     left: 0;
+    text-decoration: none;
 }
 
-.theme{
-    inset: 0 auto auto 0; /* top:0; left:0; と同等 */
+img{
+    width: 500px;
+    padding-right: 10px;
+}
+
+/*.theme{
+    inset: 0 auto auto 0; /* top:0; left:0; と同等
     width: 100%;
     margin-top: 0;
     z-index: 1000;
@@ -31,10 +37,10 @@ body {
     font-size: 70px;
     text-align: center;
     background-color: black;
-    /*background: linear-gradient(to bottom, #541c2a, black);*/
+    /*background: linear-gradient(to bottom, #541c2a, black);
     background: linear-gradient(to right, black, #541c2a, black);
     color: white;
-}
+}*/
 
 .main0{
     padding-bottom: 100px;
@@ -55,24 +61,19 @@ body {
 }
 
 .main1{
-    margin-top: 100px;
-    padding-bottom: 100px;
+    /*background: linear-gradient(to right, black, gray, black);*/
     font-size: 35px;
     line-height: 37px;
-    padding-top: 10px;
+    height: 50px;           /* 画面いっぱい */
+    width: 1000px;  
     background-position: center;
-    color: brown;
+    color: black;
+    background: linear-gradient(to right, white, black, white);
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
-    padding-top: 5px;
-}
-
-.main2{
-    padding-bottom: 400px;
-    font-size: 20px;
-    line-height: 37px;
-    color: white;
     padding-top: 10px;
-    background-position: center;
 }
 
 .mae{
@@ -86,33 +87,14 @@ body {
     font-size: 30px;
 }
 
-.main1::before{
-    content:"";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
-    transform-origin: center;             /* 中央基点で拡大 */
-    width: 280px;
-    height: 50px;
-    background-color: brown;
-    z-index: -1; /* テキストの下に配置 */
-    transition: transform 0.4s ease;
+.saishin:visited {
+  color: white;
+  text-decoration: none;
 }
 
-.main1:hover::before{
-    color: brown;
-    transform: translateX(-50%) scaleX(1); /* 横に広がる */
-}
-
-.main1:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.main1:hover {
-    color: white;    
-    text-decoration: none; /* 下線を消す */
+.saishin:hover {
+  color: red;    
+  text-decoration: none; /* 下線を消す */
 }
 
 .empty{
