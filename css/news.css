@@ -16,7 +16,6 @@ body {
     text-align:center;
     margin-top:0px;
     margin-left:0px;
-    margin-right: 0px;
     font-family: serif;
 }
 
@@ -30,7 +29,6 @@ body {
     font-weight: bold;
     font-size: 70px;
     text-align: center;
-    background-color: black;
     /*background: linear-gradient(to bottom, #541c2a, black);*/
     background: linear-gradient(to right, gray, white, gray);
     color: black;
