@@ -39,7 +39,40 @@ body {
     color: black;
 }
 
+.rogo{
+    background-color: white;
+    width: 300px;
+}
+
 .main0{
+    padding-bottom: 150px;
+    font-size: 20px;
+    line-height: 37px;
+    color: white;
+    padding-top: 10px;
+    background-color: gray;
+    background: linear-gradient(to right, black, gray, black);
+    background-position: center;
+    height: 230px;           /* 画面いっぱい */
+    width: 900px;         /* 文章の幅を決める */
+    text-align: justify;  /* 両端揃え */
+    margin: 0 auto;
+    padding-left: 50;
+    padding-right: 50;
+    text-align: center;
+}
+
+.main00{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main000{
+    width: 550px;
+    text-align: justify;  /* 両端揃え */
+}
+
+.main1{
     padding-bottom: 100px;
     font-size: 20px;
     line-height: 37px;
@@ -57,8 +90,8 @@ body {
     text-align: center;
 }
 
-.main1{
-    padding-bottom: 60px;
+.main2{
+    padding-bottom: 100px;
     font-size: 20px;
     line-height: 37px;
     color: white;
@@ -66,7 +99,7 @@ body {
     background-color: gray;
     background: linear-gradient(to right, black, gray, black);
     background-position: center;
-    height: 30px;           /* 画面いっぱい */
+    height: 130px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
@@ -75,57 +108,49 @@ body {
     text-align: center;
 }
 
-.main2{
-    width: 900px;
-    height: 900px;
-    display: grid;
-    grid-auto-flow: column;         /* 要素を横方向へ自動配置 */
-    grid-auto-columns: 90%;         /* 1枚分の見せ方（%を変えると見える枚数が変わる） */
-    gap: 12px;
-
-    overflow-x: auto;               /* 横スクロール有効化 */
-    overscroll-behavior-x: contain; /* iOSなどでの余計なバウンス抑制 */
-    -webkit-overflow-scrolling: touch;
-
-    scroll-snap-type: x mandatory;  /* スナップ（パチッと止まる） */
-    scroll-padding: 20%;           /* 先頭の余白分を考慮 */
-    padding: 50px;
-    border-radius: 0px;
+.main3{
+    padding-bottom: 100px;
+    font-size: 20px;
+    line-height: 37px;
+    color: white;
+    padding-top: 10px;
     background-color: gray;
     background: linear-gradient(to right, black, gray, black);
-
-    scrollbar-width: none;
-
+    background-position: center;
+    height: 160px;           /* 画面いっぱい */
+    width: 900px;         /* 文章の幅を決める */
+    text-align: justify;  /* 両端揃え */
     margin: 0 auto;
-}
-
-.main2::before,
-.main2::after {
-  content: "";
-  width: 50%; /* 中央スナップ分の余白 */
+    padding-left: 50;
+    padding-right: 50;
+    text-align: center;
 }
 
 
-.main2 > img {
-  width: 595px;
-  height: 842px;                  /* 好みで調整。固定がイヤなら aspect-ratio を使う */
-  object-fit: cover;              /* 画像をトリミングして枠にフィット */
-  border-radius: 16px;
-  scroll-snap-align: center;       /* 画像を中央でスナップ */
-  user-select: none;              /* ドラッグ時の選択防止 */
-  pointer-events: none;           /* 画像上のドラッグをスムーズに（リンクにしたい時は外す） */
+@keyframes maru {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px white,
+      0 0 10px #ff0,
+      0 0 20px #ff0;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px white,
+      0 0 20px #ff0,
+      0 0 40px #ff0;
+  }
 }
 
-.main2::-webkit-scrollbar { display: none; }
+.maru {
+  color: #ff0;
+  animation: maru 1.5s ease-in-out infinite;
+}
 
 .mae{
     font-weight: bold;
     font-size: 40px;
-}
-
-.mae1{
-    font-weight: bold;
-    font-size: 40px;
+    line-height: 60px;
 }
 
 .EC{
