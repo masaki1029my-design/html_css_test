@@ -5,6 +5,12 @@ body {
     background-repeat:no-repeat;
     justify-content: center; /* 横中央 */
     align-items: center;     /* 縦中央 */
+    width: auto;
+}
+
+.catchcopy{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .name{
@@ -15,7 +21,6 @@ body {
 .home {
     text-align:center;
     margin-left:0px;
-    margin-left:10px;
     font-family: serif;
     left: 0;
     text-decoration: none;
@@ -24,6 +29,7 @@ body {
 img{
     width: 500px;
     padding-right: 0px;
+    margin-bottom: -90px;
 }
 
 /*.theme{

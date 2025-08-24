@@ -1,5 +1,5 @@
 body {
-    background-color:black;
+    background-color:white;
     background-size:cover;
     background-image:url("");
     background-attachment:fixed;
@@ -15,7 +15,6 @@ body {
     color: white;
     text-align:center;
     margin-left:0px;
-    margin-left:10px;
     font-family: serif;
 }
 
@@ -24,7 +23,7 @@ body {
     width: 100%;
     margin-top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0px solid #eee;
     vertical-align: middle;
     padding-right: 7px;
     font-weight: bold;
@@ -32,8 +31,8 @@ body {
     text-align: center;
     background-color: black;
     /*background: linear-gradient(to bottom, #541c2a, black);*/
-    background: linear-gradient(to right, black, #541c2a, black);
-    color: white;
+    background: linear-gradient(to right, gray, white, gray);
+    color: black;
 }
 
 .main0{
