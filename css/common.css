@@ -245,3 +245,24 @@ h3{
   color: #ff0;
   animation: English02 1.5s ease-in-out infinite;
 }
+
+@keyframes en {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #ff0,
+      0 0 10px #ff0,
+      0 0 20px #ff0;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px white,
+      0 0 20px #ff0,
+      0 0 40px #ff0;
+  }
+}
+
+.eeen{
+  font-size: 28px;
+  color: #ff0;
+  animation: en 1.5s ease-in-out infinite;
+}
