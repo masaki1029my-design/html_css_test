@@ -68,6 +68,17 @@ body{
   margin: 0 auto;
 }
 
+.works{
+  padding-top: 5px;
+  margin-top: 1px;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #541c2a;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+}
+
 .others{
   padding-top: 5px;
   margin-top: 1px;
