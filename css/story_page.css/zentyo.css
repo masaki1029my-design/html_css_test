@@ -45,7 +45,7 @@ body {
     line-height: 37px;
     color: black;
     padding-top: 10px;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../../photo/texture962350_TP_V4.webp");
     background-size: 100% 100%;
     /*background: linear-gradient(to right, black, gray, black);*/
     background-position: center;
@@ -74,7 +74,7 @@ body {
     color: black;
     padding-top: 10px;
     background-size: 100% 100%;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 230px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
