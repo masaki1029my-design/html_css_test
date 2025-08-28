@@ -48,7 +48,7 @@ body {
     background-size: 100% 100%;
     background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
-    height: 230px;           /* 画面いっぱい */
+    height: 200px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
@@ -57,9 +57,9 @@ body {
     text-align: center;
 }
 
-.main00{
-    display: flex;
-    justify-content: space-between;
+.main0_0{
+    text-align: justify;
+    font-weight: bold;
 }
 
 .main000{

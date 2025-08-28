@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    background-image: url("../photo/hora-3.jpg");
     background-size:cover;
     background-attachment:fixed;
     background-repeat:no-repeat;
@@ -52,10 +53,10 @@ img{
     padding-bottom: 100px;
     font-size: 20px;
     line-height: 37px;
-    color: white;
+    color: black;
     padding-top: 10px;
-    background-color: gray;
-    background: linear-gradient(to right, black, gray, black);
+    background-size: 100% 100%;
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 230px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
@@ -64,6 +65,11 @@ img{
     padding-left: 50;
     padding-right: 50;
     text-align: center;
+}
+
+.main0_0{
+    text-align: justify;
+    font-weight: bold;
 }
 
 .main1{
@@ -80,6 +86,29 @@ img{
     margin-right: auto;
     position: relative;
     padding-top: 10px;
+}
+
+.main2{
+    padding-bottom: 100px;
+    font-size: 20px;
+    line-height: 37px;
+    color: black;
+    padding-top: 10px;
+    background-size: 100% 100%;
+    background-image: url("../photo/texture962350_TP_V4.webp");
+    background-position: center;
+    height: 230px;           /* 画面いっぱい */
+    width: 900px;         /* 文章の幅を決める */
+    text-align: justify;  /* 両端揃え */
+    margin: 0 auto;
+    padding-left: 50;
+    padding-right: 50;
+    text-align: center;
+}
+
+.main2_2{
+    text-align: justify;
+    font-weight: bold;
 }
 
 .mae{
@@ -105,4 +134,24 @@ img{
 
 .empty{
     margin: 5.0em 0; 
+}
+
+@keyframes maru {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px white,
+      0 0 10px #ff0,
+      0 0 20px #ff0;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px white,
+      0 0 20px #ff0,
+      0 0 40px #ff0;
+  }
+}
+
+.maru {
+  color: #ff0;
+  animation: maru 1.5s ease-in-out infinite;
 }
