@@ -237,7 +237,7 @@ h3{
 @keyframes English02 {
   0%, 100% {
     text-shadow: 
-      0 0 5px #ff0,
+      0 0 5px white,
       0 0 10px #ff0,
       0 0 20px #ff0;
   }
