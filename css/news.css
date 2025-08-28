@@ -46,7 +46,7 @@ body {
     color: black;
     padding-top: 10px;
     background-size: 100% 100%;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 160px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
@@ -80,7 +80,7 @@ body {
     color: black;
     padding-top: 10px;
     background-size: 100% 100%;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 160px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
@@ -114,7 +114,7 @@ body {
     color: black;
     padding-top: 10px;
     background-size: 100% 100%;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 170px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
@@ -132,7 +132,7 @@ body {
     color: black;
     padding-top: 10px;
     background-size: 100% 100%;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 90px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
@@ -150,7 +150,7 @@ body {
     color: black;
     padding-top: 10px;
     background-size: 100% 100%;
-    background-image: url(/html_css_test/photo/texture962350_TP_V4.webp);
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
     height: 80px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
