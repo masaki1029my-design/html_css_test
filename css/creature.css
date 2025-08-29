@@ -71,18 +71,23 @@ body {
     padding-bottom: 100px;
     font-size: 20px;
     line-height: 37px;
-    color: white;
+    color: black;
     padding-top: 10px;
-    background-color: gray;
-    background: linear-gradient(to right, black, gray, black);
+    background-size: 100% 100%;
+    background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
-    height: 230px;           /* 画面いっぱい */
+    height: 950px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
     padding-left: 50;
     padding-right: 50;
     text-align: center;
+}
+
+.main1_1{
+    text-align: justify;
+    font-weight: bold;
 }
 
 .main2{

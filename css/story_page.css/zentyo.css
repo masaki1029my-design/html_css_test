@@ -49,12 +49,18 @@ body {
     background-size: 100% 100%;
     /*background: linear-gradient(to right, black, gray, black);*/
     background-position: center;
-    height: 310px;           /* 画面いっぱい */
+    height: 400px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;
     margin: 0 auto;
     padding-left: 50;
     padding-right: 50;
+}
+
+.main0_0{
+    text-align: justify;
+    font-weight: bold;
+    line-height: 40px;
 }
 
 .main00{
