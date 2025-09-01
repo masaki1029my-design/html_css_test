@@ -39,6 +39,13 @@ body {
     width: 300px;
 }
 
+img{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+}
+
 .main0{
     padding-bottom: 150px;
     font-size: 20px;
@@ -49,7 +56,7 @@ body {
     background-size: 100% 100%;
     /*background: linear-gradient(to right, black, gray, black);*/
     background-position: center;
-    height: 400px;           /* 画面いっぱい */
+    height: 1050px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;
     margin: 0 auto;
@@ -82,7 +89,7 @@ body {
     background-size: 100% 100%;
     background-image: url("../../photo/texture962350_TP_V4.webp");
     background-position: center;
-    height: 230px;           /* 画面いっぱい */
+    height: 1100px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
