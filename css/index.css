@@ -20,6 +20,7 @@ body {
 }
 
 .home {
+    inset: 0 auto auto 0; /* top:0; left:0; と同等 */
     text-align:center;
     margin-left:0px;
     font-family: serif;
