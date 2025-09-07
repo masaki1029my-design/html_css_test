@@ -4,6 +4,10 @@ body {
     background-image:url("../photo/hora-3.jpg");
     background-attachment:fixed;
     background-repeat:no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
     width: auto;
 }
 
