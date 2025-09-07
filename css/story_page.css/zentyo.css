@@ -43,7 +43,18 @@ img{
     display: flex;
     align-items: center;
     margin: 0 auto;
+}
+
+.z1{
     width: 500px;
+}
+
+.z2{
+    height: 500px;
+}
+
+.z3{
+    height: 500px;
 }
 
 .main0{
@@ -70,50 +81,54 @@ img{
     line-height: 40px;
 }
 
-.main00{
-    display: flex;
-    justify-content: space-between;
-}
-
-.main000{
-    width: 550px;
-    text-align: justify;  /* 両端揃え */
-}
-
 .main1{
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     font-size: 20px;
     line-height: 37px;
     color: black;
     padding-top: 10px;
-    background-size: 100% 100%;
     background-image: url("../../photo/texture962350_TP_V4.webp");
+    background-size: 100% 100%;
+    /*background: linear-gradient(to right, black, gray, black);*/
     background-position: center;
-    height: 1100px;           /* 画面いっぱい */
+    height: 1050px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
-    text-align: justify;  /* 両端揃え */
+    text-align: justify;
     margin: 0 auto;
     padding-left: 50;
     padding-right: 50;
 }
 
+.main1_1{
+    text-align: justify;
+    font-weight: bold;
+    line-height: 40px;
+}
+
 .main2{
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     font-size: 20px;
     line-height: 37px;
-    color: white;
+    color: black;
     padding-top: 10px;
-    background-color: gray;
-    background: linear-gradient(to right, black, gray, black);
+    background-image: url("../../photo/texture962350_TP_V4.webp");
+    background-size: 100% 100%;
+    /*background: linear-gradient(to right, black, gray, black);*/
     background-position: center;
-    height: 130px;           /* 画面いっぱい */
+    height: 1050px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
-    text-align: justify;  /* 両端揃え */
+    text-align: justify;
     margin: 0 auto;
     padding-left: 50;
     padding-right: 50;
-    text-align: center;
 }
+
+.main2_2{
+    text-align: justify;
+    font-weight: bold;
+    line-height: 40px;
+}
+
 
 .main3{
     padding-bottom: 100px;
