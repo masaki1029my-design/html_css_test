@@ -6,6 +6,10 @@ body {
     background-repeat:no-repeat;
     justify-content: center; /* 横中央 */
     align-items: center;     /* 縦中央 */
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
     width: auto;
 }
 
