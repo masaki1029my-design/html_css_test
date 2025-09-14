@@ -72,7 +72,7 @@ body {
     background-size: 100% 100%;
     background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
-    height: 950px;           /* 画面いっぱい */
+    height: 750px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
