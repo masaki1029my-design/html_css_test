@@ -14,6 +14,14 @@ body {
 .catchcopy{
     width: 100%;
     inset: 0 auto auto 0; /* top:0; left:0; と同等 */
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+.catchcopy_english{
+    width: 100%;
+    inset: 0 auto auto 0; /* top:0; left:0; と同等 */
+    font-family: Apple Chancery;
     font-size: 30px;
     font-weight: bold;
 }
@@ -34,7 +42,7 @@ body {
 img{
     width: 500px;
     padding-right: 0px;
-    margin-bottom: -90px;
+    margin-bottom: 100px;
 }
 
 /*.theme{
@@ -62,7 +70,7 @@ img{
     background-size: 100% 100%;
     background-image: url("../photo/texture962350_TP_V4.webp");
     background-position: center;
-    height: 230px;           /* 画面いっぱい */
+    height: 400px;           /* 画面いっぱい */
     width: 900px;         /* 文章の幅を決める */
     text-align: justify;  /* 両端揃え */
     margin: 0 auto;
@@ -76,6 +84,11 @@ img{
     font-weight: bold;
 }
 
+.main0_0_0{
+    text-align: right;
+    font-weight: bold;
+}
+
 .main1{
     /*background: linear-gradient(to right, black, gray, black);*/
     font-size: 35px;
@@ -84,7 +97,7 @@ img{
     width: 1000px;  
     background-position: center;
     color: black;
-    background: linear-gradient(to right, black, white, black);
+    background: linear-gradient(to right, white, brown, white);
     margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -155,7 +168,7 @@ img{
 }
 
 .saishin:hover {
-  color: brown;    
+  color: white;    
   text-decoration: none; /* 下線を消す */
 }
 
