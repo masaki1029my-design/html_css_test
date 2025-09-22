@@ -30,7 +30,6 @@ body{
   overflow-y: auto;
   font-family: serif;
   font-size: 28px;
-  text-align: center;
   color: black;
   font-weight: bold;
 }
@@ -55,6 +54,7 @@ body{
   width: 280px;
   height: 40px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .English{
@@ -63,6 +63,7 @@ body{
   font-size: 18px;
   color: black;
   font-family: Apple Chancery;
+  text-align: center;
 }
 
 
@@ -118,44 +119,11 @@ a:link {
   text-decoration: none;
 }
 
-.ba{
-  position: relative;
-  padding-top: 5px;
-  color: black;
-}
-
-.ba::before{
-  content:"";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
-  transform-origin: center;             /* 中央基点で拡大 */
-  width: 280px;
-  height: 40px;
-  background-color: brown;
-  z-index: -1; /* テキストの下に配置 */
-  transition: transform 0.4s ease;
-}
-
-.ba:hover::before{
-  transform: translateX(-50%) scaleX(1); /* 横に広がる */
-}
-
-.ba:visited {
-  color: black;
-  text-decoration: none;
-}
-
-.ba:hover {
-  color: white;    
-  text-decoration: none; /* 下線を消す */
-}
-
 .title{
     color: black;
     font-size: 45px;
     font-family: Apple Chancery;
+    text-align: center;
 }
 
 /* 新着のマークアニメーションに関する */
@@ -236,6 +204,7 @@ a:link {
   cursor: pointer;
   font-weight: 600;
   position: relative;
+  text-align: center;
 }
 
 /* 矢印 */
@@ -255,24 +224,6 @@ a:link {
   color: white;    
 }
 
-.title01::before{
-  content:"";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
-  transform-origin: center;             /* 中央基点で拡大 */
-  width: 280px;
-  height: 40px;
-  background-color: brown;
-  z-index: -1; /* テキストの下に配置 */
-  transition: transform 0.4s ease;
-}
-
-.title01:hover::before{
-  transform: translateX(-50%) scaleX(1); /* 横に広がる */
-}
-
 /* サブナビを折りたたむ（max-height トリック）*/
 .subnav {
   max-height: 0;
@@ -290,14 +241,6 @@ a:link {
   opacity: 1;
 }
 
-.toggle:checked + .title01{
-  background-color: brown;
-  color: white;
-  margin: auto;
-  width: 280px;
-  height: 40px;
-}
-
 /* 矢印回転 */
 .toggle:checked + .title01::after { transform: rotate(90deg); }
 
@@ -311,25 +254,8 @@ li{
 .works{
   position: relative;
   padding-top: 5px;
+  margin-left: 35px;
   color: black;
-}
-
-.works::before{
-  content:"";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
-  transform-origin: center;             /* 中央基点で拡大 */
-  width: 280px;
-  height: 30px;
-  background-color: brown;
-  z-index: -1; /* テキストの下に配置 */
-  transition: transform 0.4s ease;
-}
-
-.works:hover::before{
-  transform: translateX(-50%) scaleX(1); /* 横に広がる */
 }
 
 .works:visited {
@@ -340,4 +266,11 @@ li{
 .works:hover {
   color: white;    
   text-decoration: none; /* 下線を消す */
+}
+
+.years{
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
