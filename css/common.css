@@ -46,50 +46,6 @@ body{
   margin: 0 auto;
 }
 
-.world{
-  padding-top: 5px;
-  margin-top: 1px;
-  padding-bottom: 5px;
-  color: white;
-  background-color: #541c2a;
-  width: 280px;
-  height: 40px;
-  margin: 0 auto;
-}
-
-.creature{
-  padding-top: 5px;
-  margin-top: 1px;
-  padding-bottom: 5px;
-  color: white;
-  background-color: #541c2a;
-  width: 280px;
-  height: 40px;
-  margin: 0 auto;
-}
-
-.works{
-  padding-top: 5px;
-  margin-top: 1px;
-  padding-bottom: 5px;
-  color: white;
-  background-color: #541c2a;
-  width: 280px;
-  height: 40px;
-  margin: 0 auto;
-}
-
-.others{
-  padding-top: 5px;
-  margin-top: 1px;
-  padding-bottom: 5px;
-  color: white;
-  background-color: #541c2a;
-  width: 280px;
-  height: 40px;
-  margin: 0 auto;
-}
-
 .m{
   padding-top: 5px;
   margin-top: 1px;
@@ -109,6 +65,8 @@ body{
   font-family: Apple Chancery;
 }
 
+
+/* ▼サイドメニュー */
 /* チェックボックスは非表示 */
 #menu-toggle {
   display: none;
@@ -184,27 +142,14 @@ a:link {
   transform: translateX(-50%) scaleX(1); /* 横に広がる */
 }
 
-a:visited {
+.ba:visited {
   color: black;
   text-decoration: none;
 }
 
-a:hover {
+.ba:hover {
   color: white;    
   text-decoration: none; /* 下線を消す */
-}
-
-.instagram{
-  font-size: 15px;
-  color:white;
-  text-decoration: underline;
-  padding-top: 100px;
-}
-
-h3{
-    color:black;
-    font-size: 40px;
-    font-family: serif;
 }
 
 .title{
@@ -213,6 +158,7 @@ h3{
     font-family: Apple Chancery;
 }
 
+/* 新着のマークアニメーションに関する */
 @keyframes English01 {
   0%, 100% {
     text-shadow: 
@@ -281,14 +227,12 @@ h3{
 }
 
 
-/* 作品ナビゲーション */
-.nav2 { width: 260px; font-family: serif; }
-.item { border-bottom: 1px solid #eee; }
+/* サイドバー内における作品ナビゲーションに関する */
 .toggle { display: none; } /* checkbox 本体は隠す */
 
 .title01 {
   display: block;
-  padding: 0.8rem;
+  padding-bottom: 0.4rem;
   cursor: pointer;
   font-weight: 600;
   position: relative;
@@ -296,10 +240,37 @@ h3{
 
 /* 矢印 */
 .title01::after {
-  content: "▸";
-  position: absolute;
-  right: 12px;
+  content: "▶︎" ;
+  font-size: small;
+  position:absolute;
   transition: transform 0.2s ease;
+}
+
+.title01:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.title01:hover {
+  color: white;    
+}
+
+.title01::before{
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
+  transform-origin: center;             /* 中央基点で拡大 */
+  width: 280px;
+  height: 40px;
+  background-color: brown;
+  z-index: -1; /* テキストの下に配置 */
+  transition: transform 0.4s ease;
+}
+
+.title01:hover::before{
+  transform: translateX(-50%) scaleX(1); /* 横に広がる */
 }
 
 /* サブナビを折りたたむ（max-height トリック）*/
@@ -319,8 +290,54 @@ h3{
   opacity: 1;
 }
 
+.toggle:checked + .title01{
+  background-color: brown;
+  color: white;
+  margin: auto;
+  width: 280px;
+  height: 40px;
+}
+
 /* 矢印回転 */
 .toggle:checked + .title01::after { transform: rotate(90deg); }
 
 /* サブ項目の見た目 */
 .subnav li { padding: 0.5rem 0; }
+
+li{
+ font-size: 20px; 
+}
+
+.works{
+  position: relative;
+  padding-top: 5px;
+  color: black;
+}
+
+.works::before{
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) scaleX(0); /* 中央から縮小状態 */
+  transform-origin: center;             /* 中央基点で拡大 */
+  width: 280px;
+  height: 30px;
+  background-color: brown;
+  z-index: -1; /* テキストの下に配置 */
+  transition: transform 0.4s ease;
+}
+
+.works:hover::before{
+  transform: translateX(-50%) scaleX(1); /* 横に広がる */
+}
+
+.works:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.works:hover {
+  color: white;    
+  text-decoration: none; /* 下線を消す */
+}
