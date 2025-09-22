@@ -279,3 +279,48 @@ h3{
   color: #ff0;
   animation: en 1.5s ease-in-out infinite;
 }
+
+
+/* 作品ナビゲーション */
+.nav2 { width: 260px; font-family: serif; }
+.item { border-bottom: 1px solid #eee; }
+.toggle { display: none; } /* checkbox 本体は隠す */
+
+.title01 {
+  display: block;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+}
+
+/* 矢印 */
+.title01::after {
+  content: "▸";
+  position: absolute;
+  right: 12px;
+  transition: transform 0.2s ease;
+}
+
+/* サブナビを折りたたむ（max-height トリック）*/
+.subnav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.28s ease, opacity 0.28s ease;
+  opacity: 0;
+  margin: 0;
+  padding: 0 1rem;
+  list-style: none;
+}
+
+/* チェックが入ったら展開 */
+.toggle:checked + .title01 + .subnav {
+  max-height: 500px; /* 実際の高さより十分大きめに */
+  opacity: 1;
+}
+
+/* 矢印回転 */
+.toggle:checked + .title01::after { transform: rotate(90deg); }
+
+/* サブ項目の見た目 */
+.subnav li { padding: 0.5rem 0; }
