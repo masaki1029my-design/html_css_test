@@ -17,6 +17,7 @@ body {
   background:url("photo/pngtree-hd-special-paper-texture-material-png-image_4363502.jpg");
   background-size: cover;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   transition: opacity 1s ease; /* フェードアウト */
@@ -33,16 +34,38 @@ body {
   pointer-events: none;
 }
 
+.border{
+  width: 900px;            /* 画像に合わせた長さ */
+  border-bottom: 3px solid #333;
+  margin: 0 auto;
+}
+
+
 /* 本文（最初は透明） */
 #content {
-  background-color: #eee;
-  background-size: cover;
   opacity: 0;
   transition: opacity 1s ease; /* フェードイン */
   padding: 20px;
+  inset: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 35px;
 }
 
 #content.show {
   opacity: 1;
+}
+
+#content img {
+  width: 700px;
+  height: auto;
+}
+
+.empty1{
+  margin: 5.0em 0; 
 }
 
