@@ -1,0 +1,48 @@
+body {
+    background-color: #eee;
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    width: auto;
+}
+
+/* スプラッシュ全体 */
+#splash {
+  position: fixed;
+  inset: 0;
+  background:url("photo/pngtree-hd-special-paper-texture-material-png-image_4363502.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease; /* フェードアウト */
+  z-index: 1000;
+}
+
+#splash img {
+  width: 500px;
+  height: auto;
+}
+
+#splash.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 本文（最初は透明） */
+#content {
+  background-color: #eee;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease; /* フェードイン */
+  padding: 20px;
+}
+
+#content.show {
+  opacity: 1;
+}
+
