@@ -44,9 +44,12 @@ body{
   width: 280px;
   height: 40px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .English{
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 2px;
   margin-top: 50px;
   font-size: 18px;
@@ -114,9 +117,10 @@ a:link {
 }
 
 .title{
-    color: black;
-    font-size: 45px;
-    font-family: Apple Chancery;
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  font-family: Apple Chancery;
 }
 
 /* 新着のマークアニメーションに関する */
